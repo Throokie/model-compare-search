@@ -10,6 +10,38 @@
 - **结果保存** - 每个模型独立文件夹存储，方便后续分析
 - **Kimi 总结** - 自动调用 Kimi 整合各模型观点
 
+## 推荐工作流
+
+这套 Claude Code Skills + Agents 工作流，通过多模型协作和持续迭代，**低端模型也能跑出不错的成绩**：
+
+```
+1️⃣ 需求澄清阶段
+   └─ 运行 decision-record 技能 + 你的需求和痛点
+      └─ 反复迭代直到需求清晰
+
+2️⃣ 规格定义阶段
+   └─ 运行 /requirement-to-prd
+      └─ 将需求转为完整 PRD 文档
+
+3️⃣ 代码实现阶段
+   └─ 运行 prd-to-code 技能
+      └─ 可选项：配合 th-deep-coder2 或 th-deep-coder 深度代码分析
+
+4️⃣ 测试验证阶段
+   └─ 运行 th-enterprise-test-agent
+      └─ 指定 playwright-cli / puppeteer-cli 进行浏览器自动化测试
+
+5️⃣ Bug 修复阶段
+   └─ 运行 th-bug-analyzer 分析影响范围
+
+🔁 循环：任意组合，不断迭代
+```
+
+**核心原则**：
+- 多技能/Agent 协作，取长补短
+- 持续反馈，快速迭代
+- 自动化测试保障质量
+
 ## 安装
 
 ### 方式 1：直接下载
@@ -230,3 +262,37 @@ MIT License
 ## 相关项目
 
 - [NewAPI](https://github.com/Calcium-Ion/new-api) - 统一的大模型 API 网关
+
+## 可用 Agents
+
+本项目可与以下 Agents 配合使用：
+
+| Agent | 用途 |
+|-------|------|
+| agent-factory | 动态 Agent 生成器（母体模式） |
+| css-architect | CSS 架构师 |
+| frontend-tester | 前端测试员 |
+| th-bug-analyzer | Bug 影响范围分析 |
+| th-code-expert | 代码专家（基础版） |
+| th-code-expert-pro | 代码专家（高级版） |
+| ui-designer | UI 设计师 |
+| ux-researcher | UX 研究员 |
+
+## 可用 Skills
+
+| Skill | 触发词 | 用途 |
+|-------|--------|------|
+| decision-record | 记录决策、需求演进 | 需求分析与决策追踪 |
+| requirement-to-prd | 生成PRD、需求转PRD | 需求转产品需求文档 |
+| prd-to-code | PRD转代码、根据PRD开发 | 根据PRD生成代码 |
+| prd-evolution | 更新PRD、PRD版本管理 | PRD版本管理 |
+| th-deep-coder | 深度代码分析 | 多模型代码审查 |
+| th-deep-coder2 | 深度代码研究v2 | Agent工厂+多模型分析 |
+| th-enterprise-test-agent | 发布测试、企业级测试 | 商业化级别测试 |
+| th-bug-analyzer | 分析bug影响 | Bug影响范围分析 |
+| playwright-cli | 浏览器自动化 | 网页测试、截图 |
+| puppeteer-cli | 浏览器自动化 | 网页测试、截图 |
+| model-compare-search | 多模型搜索、模型对比 | **本工具** |
+| newapi-cli | newapi、调用模型 | NewAPI CLI工具 |
+| orchestrator | 创建团队、多代理协作 | 多代理编排 |
+| article-writing | 文章写作 | 长文写作辅助 |
