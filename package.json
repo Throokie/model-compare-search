@@ -1,0 +1,38 @@
+{
+  "name": "model-compare-search",
+  "version": "6.0.0",
+  "description": "多模型对比搜索 - 自动从 NewAPI 获取可用模型，并行调用多模型获取综合答案",
+  "main": "search.mjs",
+  "bin": {
+    "model-compare-search": "./search.mjs",
+    "mcs": "./search.mjs"
+  },
+  "scripts": {
+    "test": "node search.mjs --help"
+  },
+  "keywords": [
+    "newapi",
+    "llm",
+    "multi-model",
+    "ai",
+    "comparison",
+    "search",
+    "deepseek",
+    "kimi",
+    "glm",
+    "qwen"
+  ],
+  "author": "throokie",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/throokie/model-compare-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/throokie/model-compare-search/issues"
+  },
+  "homepage": "https://github.com/throokie/model-compare-search#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

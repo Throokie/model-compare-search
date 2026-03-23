@@ -1,0 +1,36 @@
+# 数据目录（用户本地数据）
+data/
+*.log
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 测试输出
+test-output/
+coverage/
+
+# 临时文件
+tmp/
+temp/
+*.tmp
