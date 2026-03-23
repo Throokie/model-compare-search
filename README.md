@@ -273,8 +273,6 @@ MIT License
 | css-architect | CSS 架构师 |
 | frontend-tester | 前端测试员 |
 | th-bug-analyzer | Bug 影响范围分析 |
-| th-code-expert | 代码专家（基础版） |
-| th-code-expert-pro | 代码专家（高级版） |
 | ui-designer | UI 设计师 |
 | ux-researcher | UX 研究员 |
 
