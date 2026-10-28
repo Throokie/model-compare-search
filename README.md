@@ -1,5 +1,7 @@
 # Model Compare Search
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 多模型对比搜索工具 - 自动从 NewAPI 获取可用模型，并行调用多模型获取综合答案。
 
 ## 功能特性
